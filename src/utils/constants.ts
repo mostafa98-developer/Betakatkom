@@ -1,0 +1,6 @@
+export const HTTP_RESPONSES = {
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  ERROR: 500,
+  NOT_FOUND: 404,
+};

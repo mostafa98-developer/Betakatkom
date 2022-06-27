@@ -1,0 +1,29 @@
+name: "Commit Message Check"
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - "*"
+
+jobs:
+  check-commit-message:
+    name: Check Commit Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Commit Pattern
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: "^issue-[0-9]+:.+$"
+          flags: "gm"
+          error: "Your commit message should follow: [issue-{number}: {you message}]"

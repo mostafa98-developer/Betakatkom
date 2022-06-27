@@ -1,0 +1,54 @@
+{
+  "name": "betakatcom-be",
+  "version": "1.0.0",
+  "description": "Backend services for betakatcom app, phone recharge cards managment system",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "bash ./scripts/start.sh",
+    "start:db": "bash ./scripts/start-db.sh",
+    "migrate:dev": "bash ./scripts/migrate-db.sh",
+    "dev": "nodemon",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --config .prettierrc.json --write src/**/*.ts",
+    "lint": "pretty-quick --staged",
+    "full-lint": "eslint -c .eslintrc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrahimrahhal/Betakatcom-BE.git"
+  },
+  "author": "Ibrahim Rahhal <Ibrahim.rahhal3636@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ibrahimrahhal/Betakatcom-BE/issues"
+  },
+  "homepage": "https://github.com/Ibrahimrahhal/Betakatcom-BE#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/crypto-js": "^4.0.2",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/validator": "^13.6.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "husky": "^7.0.1",
+    "nodemon": "^2.0.9",
+    "prettier": "2.3.2",
+    "pretty-quick": "^3.1.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "expo-server-sdk": "^3.6.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  }
+}

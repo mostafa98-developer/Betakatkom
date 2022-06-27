@@ -1,0 +1,2042 @@
+{
+	"info": {
+		"_postman_id": "3ae01f22-1f23-462f-8ac8-605be8226eb7",
+		"name": "Betakatcom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Router",
+			"item": [
+				{
+					"name": "Sellers[Admin Only]",
+					"item": [
+						{
+							"name": "Sellers [Add All Sellers]",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/users/sellers",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"sellers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{API_URL}}/users/sellers",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"sellers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "541"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"21d-2fzNejwmsXjg0Qep+k2Dq77k5mc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 12:39:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 12,\n            \"username\": \"ibrahimrahhal546\",\n            \"phone\": \"\",\n            \"email\": \"\",\n            \"token\": null,\n            \"type\": 2,\n            \"wallet\": null,\n            \"createdBy\": null,\n            \"createdOn\": \"2021-08-10T06:29:58.000Z\",\n            \"deletedOn\": null,\n            \"createdAt\": \"2021-08-10T06:29:58.000Z\",\n            \"updatedAt\": \"2021-08-10T06:29:58.000Z\"\n        },\n        {\n            \"id\": 13,\n            \"username\": \"ibrahimtheboss\",\n            \"phone\": \"+962796061133\",\n            \"email\": \"ibrahim.rahhal3636@gmail.com\",\n            \"token\": null,\n            \"type\": 2,\n            \"wallet\": 1,\n            \"createdBy\": 5,\n            \"createdOn\": \"2021-08-23T12:39:16.000Z\",\n            \"deletedOn\": null,\n            \"createdAt\": \"2021-08-23T12:39:16.000Z\",\n            \"updatedAt\": \"2021-08-23T12:39:16.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Seller [Edit Existing Seller]",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"id\": 13,\n        \"phone\": \"+96279121212\",\n        \"email\": \"ibrahim.rahhal3636@gmail.com\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/users/seller",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"seller"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"data\": {\n        \"id\": 13,\n        \"phone\": \"+96279121212\",\n        \"email\": \"ibrahim.rahhal3636@gmail.com\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/users/seller",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"seller"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "11"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 12:46:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Seller [Create New Seller]",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"id\": 14,\n        \"username\": \"thenewseller\",\n        \"phone\": \"+962796061133\",\n        \"email\": \"ibrahim.rahhaaaa@gmail.com\",\n        \"password\": \"some-strong-password\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/users/seller",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"seller"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"data\": {\n        \"username\": \"thenewseller\",\n        \"phone\": \"+962796061133\",\n        \"email\": \"ibrahim.rahhaaaa@gmail.com\",\n        \"password\": \"some-strong-password\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/users/seller",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"seller"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "252"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"fc-6Dkb5+/0KMFsLcxTZhpZUEPzzZ4\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 12:49:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"createdOn\": {\n            \"fn\": \"now\",\n            \"args\": []\n        },\n        \"id\": 14,\n        \"username\": \"thenewseller\",\n        \"phone\": \"+962796061133\",\n        \"email\": \"ibrahim.rahhaaaa@gmail.com\",\n        \"createdBy\": 1,\n        \"wallet\": 2,\n        \"type\": 2,\n        \"updatedAt\": \"2021-08-23T12:49:13.046Z\",\n        \"createdAt\": \"2021-08-23T12:49:13.046Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Seller [Delete Existing Seller]",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/users/seller?id=14",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"seller"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "14"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{API_URL}}/users/seller?id=14",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"seller"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "14"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "11"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 12:53:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {}\n}"
+								}
+							]
+						}
+					],
+					"description": "Sellers route/ Only admin users will have access to this"
+				},
+				{
+					"name": "Selling Point [Admin & Seller Only]",
+					"item": [
+						{
+							"name": "Selling-Points [Get All Selling Points For User]",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/users/selling-points",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"selling-points"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{API_URL}}/users/selling-points",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"selling-points"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "282"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11a-p1r5PPaDofd1ChyPRVtL7vJXG8c\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 13:16:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 17,\n            \"username\": \"carrfuors\",\n            \"phone\": \"+962796061112\",\n            \"email\": \"ibrahimasdasd@gmail.com\",\n            \"token\": null,\n            \"type\": 3,\n            \"wallet\": 5,\n            \"createdBy\": 1,\n            \"createdOn\": \"2021-08-23T13:16:05.000Z\",\n            \"deletedOn\": null,\n            \"createdAt\": \"2021-08-23T13:16:05.000Z\",\n            \"updatedAt\": \"2021-08-23T13:16:05.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Selling-Points-all [Get All Selling Points - Only Admin]",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/users/selling-points/all",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"selling-points",
+										"all"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{API_URL}}/users/selling-points/all",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"selling-points",
+												"all"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "282"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11a-p1r5PPaDofd1ChyPRVtL7vJXG8c\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 13:17:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 17,\n            \"username\": \"carrfuors\",\n            \"phone\": \"+962796061112\",\n            \"email\": \"ibrahimasdasd@gmail.com\",\n            \"token\": null,\n            \"type\": 3,\n            \"wallet\": 5,\n            \"createdBy\": 1,\n            \"createdOn\": \"2021-08-23T13:16:05.000Z\",\n            \"deletedOn\": null,\n            \"createdAt\": \"2021-08-23T13:16:05.000Z\",\n            \"updatedAt\": \"2021-08-23T13:16:05.000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Selling-Point [Create New Seller Point]",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"username\": \"carrfuors\",\n        \"phone\": \"+962796061112\",\n        \"email\": \"ibrahimasdasd@gmail.com\",\n        \"password\": \"some-strong-password\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/users/selling-point",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"selling-point"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"data\": {\n        \"username\": \"carrfuors\",\n        \"phone\": \"+962796061112\",\n        \"email\": \"ibrahimasdasd@gmail.com\",\n        \"password\": \"some-strong-password\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/users/selling-point",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"selling-point"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f6-s3Zi69smmDnGqdxlh4ePkDh2/Jg\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 13:16:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"createdOn\": {\n            \"fn\": \"now\",\n            \"args\": []\n        },\n        \"id\": 17,\n        \"username\": \"carrfuors\",\n        \"phone\": \"+962796061112\",\n        \"email\": \"ibrahimasdasd@gmail.com\",\n        \"createdBy\": 1,\n        \"wallet\": 5,\n        \"type\": 3,\n        \"updatedAt\": \"2021-08-23T13:16:05.616Z\",\n        \"createdAt\": \"2021-08-23T13:16:05.616Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Selling-Point [Edit Seller Point]",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"id\": 17,\n        \"phone\": \"+962796061211\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/users/selling-point",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"selling-point"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"data\": {\n        \"id\": 17,\n        \"phone\": \"+962796061211\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{API_URL}}/users/selling-point",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"selling-point"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "11"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 13:22:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Selling-Point [Delete Selling Point]",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/users/selling-point?id=17",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"users",
+										"selling-point"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "17"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{API_URL}}/users/selling-point?id=17",
+											"host": [
+												"{{API_URL}}"
+											],
+											"path": [
+												"users",
+												"selling-point"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "17"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "11"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 23 Aug 2021 13:24:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User[Get Current User]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/user",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "257"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"101-eZIDR6SJgmGveFSNf2ZQ+39Q9jM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Aug 2021 13:26:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"ibrahimrahhal\",\n        \"phone\": \"0796061133\",\n        \"email\": \"ibrahim.rahhal3636@gmail.com\",\n        \"token\": null,\n        \"type\": 1,\n        \"wallet\": null,\n        \"createdOn\": \"2021-07-16T18:03:11.000Z\",\n        \"createdAt\": \"2021-07-16T18:03:11.000Z\",\n        \"updatedAt\": \"2021-07-16T18:03:11.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Change Password [Change Current User Passowrd]",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"oldPassword\": \"Aa.25252\",\n        \"newPassword\": \"1234567\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/user/change-password",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"change-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"oldPassword\": \"Aa.25252\",\n        \"newPassword\": \"1234567\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/user/change-password",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"user",
+										"change-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Aug 2021 13:28:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {}\n}"
+						}
+					]
+				}
+			],
+			"description": "Route to control all user related operations"
+		},
+		{
+			"name": "Authentication Router",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"username\": \"carrfuor\",\r\n        \"password\": \"Aa.25252\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/login",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": {\r\n        \"username\": \"ibrahimrahhal\",\r\n        \"password\": \"Aa.25252\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/login",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "756"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f4-wk/QniDuEx9x3QJNcJeVRgmHWfE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Aug 2021 12:31:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"token\": \"Bearer U2FsdGVkX1+HJFn3x1l5N+k9fP0d1+lXahPu9ULjZj7A5q0ePGaVS0viLiDzVPjmsGbDSA9PUyAjmyjt6Z590u4CvSxWmG7LpyVTy78+YZ3IoaarqSp0BmIbcsdY0qIyqKsApKG7ZL+p9S2Edevne1Fybi3VdyfIIV+kgJ2H0CSAKUJGMtbz630WyGszkkOyqVnYtiequ8BHBgL7OvYuP5wif7YCTeqAaVB/k2NW2yfO823bnQT9208oLMQ2anLFMGgzQhfQlyC+ZLgJmyAL1xn5njE5T4X45vri/aHlS93EsWEFI7B7VIgx09vZFdepgjjSGaj7EefBQ+LCtc5OVEB2Mi8vjMq8HlTp7kldBEjY5BmoHjNB0LndR324AH9tfa0VPeffEL2nUrkksrwNyithcR8J60GVzxIl5P3tTk08bJkQEjpX1Xu3zY3hVu8HCD709BQVnNsDTXk4ssh6VJol9h0ZzahADzIOkjogpShE3hN8ccMrAgKjOhj0siXJiQUzROS80LykRvPv+RqiJQahqEnQjmCEuvuMqtYE7EfJifzzL+9mTBX7YFRlQGsqxqVlllOfuarVAvyKcnEDjl5gOGny7uAbYzdgNr/HgJQY9AT5mRyveb2oMVIEQiWUp+yKXNkao4hJ8Carw5HdxwUFvsOdzHkGgmqJmuc8LRqSgq4PwJQjEhh8H6bo/be+1xHju7ELAi1z3DNTqmpNCA==\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Card Type",
+			"item": [
+				{
+					"name": "Get All Card Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/card-type",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"card-type"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/card-type",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"card-type"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1443"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5a3-UHqRjhHRUg1xLUfnIMp1Do5VidE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Aug 2021 22:13:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nameArabic\": \"zain\",\n            \"type\": null,\n            \"nameEnglish\": \"zain\",\n            \"image\": \"https://www.tenderjo.com/DataFiles/LOGO/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D8%A9%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%AA%D9%81%D8%A7%D9%84%D9%85%D8%AA%D9%86%D9%82%D9%84%D8%A9-%D8%B2%D9%8A%D9%86202001291645051.jpg\",\n            \"price\": 0,\n            \"createdAt\": \"2021-08-24T21:52:56.000Z\",\n            \"deletedOn\": null,\n            \"updatedAt\": \"2021-08-24T21:52:56.000Z\",\n            \"children\": [\n                {\n                    \"id\": 2,\n                    \"nameArabic\": \"zain mix\",\n                    \"type\": 1,\n                    \"nameEnglish\": \"zain mix\",\n                    \"image\": \"https://www.tenderjo.com/DataFiles/LOGO/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D8%A9%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%AA%D9%81%D8%A7%D9%84%D9%85%D8%AA%D9%86%D9%82%D9%84%D8%A9-%D8%B2%D9%8A%D9%86202001291645051.jpg\",\n                    \"price\": 0,\n                    \"createdAt\": \"2021-08-24T21:54:43.000Z\",\n                    \"deletedOn\": null,\n                    \"updatedAt\": \"2021-08-24T21:54:43.000Z\",\n                    \"children\": [\n                        {\n                            \"id\": 3,\n                            \"nameArabic\": \"mix 3.5\",\n                            \"type\": 2,\n                            \"nameEnglish\": \"mix 3.5\",\n                            \"image\": \"https://www.tenderjo.com/DataFiles/LOGO/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D8%A9%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%AA%D9%81%D8%A7%D9%84%D9%85%D8%AA%D9%86%D9%82%D9%84%D8%A9-%D8%B2%D9%8A%D9%86202001291645051.jpg\",\n                            \"price\": 10,\n                            \"createdAt\": \"2021-08-24T21:56:27.000Z\",\n                            \"deletedOn\": null,\n                            \"updatedAt\": \"2021-08-24T21:56:27.000Z\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New Card[Admin Only]",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"nameArabic\": \"orange\",\n        \"nameEnglish\": \"orange\",\n        \"image\": \"image\",\n        \"price\": 0,\n        \"parent\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/card-type",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"card-type"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"nameArabic\": \"orange\",\n        \"nameEnglish\": \"orange\",\n        \"image\": \"image\",\n        \"price\": 0,\n        \"parent\": 1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/card-type",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"card-type"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "163"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a3-amcNP2ieSgTxMtvrZ/tj3OYvBDg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Aug 2021 22:19:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"createdAt\": {\n            \"fn\": \"now\",\n            \"args\": []\n        },\n        \"id\": 10,\n        \"nameArabic\": \"orange\",\n        \"nameEnglish\": \"orange\",\n        \"image\": \"image\",\n        \"price\": 0,\n        \"updatedAt\": \"2021-08-24T22:19:35.588Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Existing Card Type{Admin Only}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": 2,\n        \"nameArabic\": \"new name\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/card-type",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"card-type"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"id\": 2,\n        \"nameArabic\": \"new name\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/card-type",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"card-type"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Aug 2021 23:07:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Card",
+			"item": [
+				{
+					"name": "Create Card [Admin Only]",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"code\": \"##########\",\n        \"type\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/card",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"code\": \"##########\",\n        \"type\": 1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/card",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"card"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f-CET2CoQnLw2eMKD2xeOwQPVmLYY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Aug 2021 23:14:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"createdOn\": {\n            \"fn\": \"now\",\n            \"args\": []\n        },\n        \"id\": 1,\n        \"code\": \"##########\",\n        \"type\": 1,\n        \"updatedAt\": \"2021-08-24T23:14:31.798Z\",\n        \"createdAt\": \"2021-08-24T23:14:31.798Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Purchase Card [Selling Point Only]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+dgGDxZmdlbOTBL4ru2Q77W6Vb5boBQqqb5ahVeGKE7KqGKjCN4auMKeSMB/8akZbPdn7lpTn4Zu13UpxQHc5cAuuQA53g0/+mYb2g8q5pXmpU/F1r9Ofudg808VRU+mNeUjeR8ZYszLg6UsQzX96T4lQOOnMfgQcCvuWoBCi42aP8MMANpcFTrdEQk0rOoPcwmos0D0s8gdAZR4f93pjOCMY5dqB1sorRdfqy7aJy1Yc791SAhxwaQ55bzPc6kW5+6A6DS9D9jUJMUAh84L5MsSjsBkaLNVg05o7fU3LEB3qVDVQTPIzHVjbqcs04LNTbTSXJBDY3j6p5B7KDmuNDmJUdzaTZhFkY6wN+v6pYdLzqsflMQyLkPiSxu/0EBcehIV3sgTfcHb8TTKvjsRNYioZZtDtOZFhKg5OZ2oPIs0QgFr5UsiivslXZ1wBCxeUbpD8ZbsYlhLwhcaFEGYSIEBkU3SzYDBka6hdxcAylpeUllVom94vLpNsti0lv/MlyP2g+dKqD9T0qoxau7HBZOGJEda4/4wxMcAfDXEzRytA0Uk3mzvvmL53mxEA0Vd3GFpbxujF137nPEOOWeVHfBUtjyCKWDVzcYmRA3MzbUZpmIMY7gqkNjVU03Gnm5e/RDIFpmA6puP1wxCk9Jh0h1EBKBq4E7Km3ED328zVRoohdMHMY7IQO",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"type\": 3\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/transaction/pruchase/card/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"transaction",
+								"pruchase",
+								"card",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"type\": 3\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/transaction/pruchase/card/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"transaction",
+										"pruchase",
+										"card",
+										""
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-YEsS1OZ0J7UU6tzgznRaAsjeVyo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 20:17:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"error\": \"No Cards Found\"\n    }\n}"
+						},
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"type\": 3\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/transaction/pruchase/card/",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"transaction",
+										"pruchase",
+										"card",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-lVdbKN/I35Zma4zW0+aiQ1PxfxI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 20:18:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"code\": \"##########\",\n        \"type\": 3,\n        \"createdOn\": \"2021-08-24T23:14:31.000Z\",\n        \"createdAt\": \"2021-08-24T23:14:31.000Z\",\n        \"updatedAt\": \"2021-08-24T23:14:31.000Z\",\n        \"Transaction\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Purchase Credit [Seller Only]",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1/o1w8nNEbMVroHjhvJbwmbA6rlMFJRbbwcPYsLeRnfrBFBDQZvqhjX4QhUo9WiTKJsJH8EdoDULCyhjChsfP0xg2IaBawz0jbqbfmAodGMBl3QAWYxQEQI84qtunnjbAbpO+hHYmzMZtX7rvm2SQP5qFynBvxe6QogojzkA+17hhqGh+TI4ggQEd+tSdcgieVSxdCZ3bzonzP9777hfEPp2xGcuf2mP4ZWmRplEeoDybGAeiiL8vRK75Q9BWHlBY4WPE0wEClJD3hc2VP2ww79aRa+q6hB5Nm0Gdpzy0Zwi+q7/gtBPf+n80J/VPmG5PBT4ij26Djw5JDPpxwKFz+DG42K3mvpTb9hvfBJ9BSYZPbVIb7sYADezcZlos50UbU7PxTlTiCKaMNfm8b7lT2mNuxIreQHi+EVSwzrYSqXEE5rcTf+SpsjnK47qrporJ0auIK6CNRA5XsfZyjNxNNsoufg6dAC+zlJHkgdt9Bp+XHA5NWu1tiUzXIECpM/mK21n/+y+S7OE+HifxzZlXpkCJcfwxZJx5SWHAEzY2HJugaKkkX8rFoXZYik8EcLnKLN3oLcUX3HtSb4E1vjLah/sidwz7qao7MPYLeB7O9Te5pLOu/5AfKrQJh4d/O/ccEmdpWP5AUL6g==",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"user\": 17,\n        \"amount\": 2\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/transaction/pruchase/credit",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"transaction",
+								"pruchase",
+								"credit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"user\": 17,\n        \"amount\": 2\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/transaction/pruchase/credit",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"transaction",
+										"pruchase",
+										"credit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 20:46:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Pay Ballance [Admin Only]",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"amount\": 2,\n        \"user\": 15\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/transaction//ballance/pay",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"transaction",
+								"",
+								"ballance",
+								"pay"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"amount\": 2,\n        \"user\": 15\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/transaction//ballance/pay",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"transaction",
+										"",
+										"ballance",
+										"pay"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b-fhQcczzxGwaoxmXpXwnFoXY79UQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 21:01:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {}\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"amount\": 2,\n        \"user\": 15\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/transaction//ballance/pay",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"transaction",
+										"",
+										"ballance",
+										"pay"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-vjtjJNHiuSsu1q9tqufAcM39IWs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 21:05:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"error\": \"Given Amount Is Bigger Than Ballance!\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/transaction/",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"transaction",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "Save User Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "U2FsdGVkX1+ouxe32stQr3Rg7dQR1+2eoke/+WurJVbHIB3i/WWFrgnyVSUl38Kljrjb8levFWd42EEO1e1mzZ2uHLpynhRMzG2IvXdFv9QHBW5GzZoqCB0gigtRFyL9AAmSqSHUksm7BoQwYb8fakTtCIILOnuihES/7yFe8gdX2BJAzU7A2JaUryFBhdt5lqpWL8lCfSph7hFt9VIzyLCMdzH+vXx3l6Afw8gXVxPqgTTup+BDXQnX9ssyTBFeIfcR66yVA3mFepQ4PClZg5SE02Tb5+txL75a9+fq942gRnHxafCEl3Sy7E3UdvB3EZoWCr4SFl3oOxMwBNsXttzjxdcT9N5ccfJJIq8l55c4XjzY6GlD0G7W/Eowo9KbAEWKGlaX6tfPOLFIJDLOLtp+nZodmC/M213TBiMXGkeNZjATstV1UstRQqCU9oCN5WyHo4MSb5NYpVBeNEmbRNuZvJqYJwwoiJJiivYi73L1ChbbMWzpAxmS7+8jOsuFfTB9uRlu5ua5YuVV7+rD3oFQH7XNkGjVgX8AaehWH73JJ2ut//IKv83RNDIZUeeDYeo+Z6r6G57uyw1dGOP89XBRIpO2yIESEx8jzb/fG32WeeiCEQN4aSGcqCVts8VuCSI/pyC043n5PiYULKmM7+D0ChOK1KsdDEJQEsomdZLia0dxvzx/xZHo/QMGFXPv",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": { \"token\": \"samsung asdsa\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/notifications/token",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"notifications",
+								"token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": { \"token\": \"samsung asdsa\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/notifications/token",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"notifications",
+										"token"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Notifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/notifications",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/notifications",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"notifications"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "U2FsdGVkX19L/TXxBCYW+LjgfgVj2h7OMFhbJGkln1DWPRw6cVHRpn5yaK+X1io95q5l+6DsCAGOJlvVyIS5Basg9o5YLTFPEjevjXLL6txm3RKB8FCcMLHt0th9fmvEg3bAVcqyP2JlHHS6BONauz5tXchnBgcUwuB/p6nyTayKUh90pLjhcVf3lvjwvF7/OhRa+CiAD5zFhIRUuSWvZxl/nrXAiD/ozNI3VlGMz6SWlIteEOiUxDDy/3s1NN9wffyfHnScNtlnX6exY8+N9HnV0if0kksDTnRVtyRAYnwhDjx1ZKDWqMDVHjR2IuHLvRzBAntaEIPLUFC+ohVGtJXRxSfocMhV5T1THB7pRqJO3KOEfkPZ+6pW1PVUlgzbevHRd+7Qq0iYJDN3bAw8FArB2wI7XWh6AZuoUcvN9koBAPNn2YkgfkJ3I8d7Y2LH5lwZXvznOJ6bjQgGqYs/3mTefvmzveBzirFNbhqdjJiFtndO8OvF3zBPOPqU2dUtBtcWJUneBkYWouFAhtijWRS5OIk3QHKKsO2dAy3hhS8mcnAZfxoF14KzhIxgDkH1SqGBf7q8Z2Rk/7jC9mFsQtynbAZtlXe/XHeuRp96A4Y=",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost:5000"
+		}
+	]
+}

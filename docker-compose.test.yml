@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  api:
+    container_name: betakatcom-api
+    build:
+      context: .
+      dockerfile: dockerfile.test
+
+    ports:
+      - 443:443
+      - 80:80
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  db:
+    container_name: betakatcom-db-test
+    build:
+      context: .
+      dockerfile: dockerfile.db.test
+
+    ports:
+      - 3306:3306
+
+    volumes:
+      - dbvol:/var/lib/mysql
+
+volumes:
+  dbvol:

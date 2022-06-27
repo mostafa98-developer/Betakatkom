@@ -1,0 +1,4 @@
+FROM mysql:8.0.0
+ENV MYSQL_ROOT_PASSWORD="testdbpass" 
+ENV MYSQL_DATABASE="betakatcom"
+EXPOSE 3306
